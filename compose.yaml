@@ -1,0 +1,30 @@
+version: '0.0'
+
+services:
+
+  registration:
+    image: api:0.0.1-SNAPSHOT
+#    depends_on:
+#      - name
+    environment:
+      - "SPRING_PROFILES_ACTIVE=docker"
+    ports:
+      - '8080:8080'
+
+#services:
+#  odyssey-api:
+#    image: amazoncorretto:21
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    ports:
+#      - '8080:8080'
+
+#  database:
+#    image: 'postgres:15.2'
+#    ports:
+#      - '5432'
+#    environment:
+#      - 'POSTGRES_USER=myuser'
+#      - 'POSTGRES_DB=mydatabase'
+#      - 'POSTGRES_PASSWORD=secret'
