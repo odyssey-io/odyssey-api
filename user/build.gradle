@@ -26,5 +26,5 @@ tasks.named('test') {
 }
 
 bootJar {
-	archiveFileName = 'api.jar'
+	archiveFileName = 'user.jar'
 }

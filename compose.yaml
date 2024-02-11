@@ -2,14 +2,15 @@ version: '0.0'
 
 services:
 
+  user:
+    image: user:0.0.1-SNAPSHOT
+    ports:
+      - '6002:6002'
+
   registration:
     image: api:0.0.1-SNAPSHOT
-#    depends_on:
-#      - name
-    environment:
-      - "SPRING_PROFILES_ACTIVE=docker"
     ports:
-      - '8080:8080'
+      - '6001:6001'
 
 #services:
 #  odyssey-api:
